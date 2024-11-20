@@ -15,45 +15,49 @@
   <div class="container">
     <div class="calculator">
       <!-- Form Section -->
-      <div class="form">
-        <h1>Mortgage Calculator</h1>
-        <a class="clear-all" id="clearAll">Clear All</a>
-        <div class="input-group">
-          <label for="amount">Mortgage Amount</label>
-          <div class="input-wrapper">
-            <span class="input-color">£</span>
-            <input class="no-arrows" type="number" id="amount" placeholder="">
-          </div>
-        </div>
-        <div class="input-row">
+        <div class="form">
+          <h1>Mortgage Calculator</h1>
+          <a class="clear-all" id="clearAll">Clear All</a>
           <div class="input-group">
-            <label for="term">Mortgage Term</label>
+            <label for="amount">Mortgage Amount</label>
             <div class="input-wrapper">
-              <input class="no-arrows" type="number" id="term" placeholder="">
-              <span class="input-colors">years</span>
+              <span class="input-color">£</span>
+              <input class="no-arrows" type="number" id="amount" placeholder="">
+            </div>
+            <div class="error-message" id="amount-error"></div> 
+          </div>
+          <div class="input-row">
+            <div class="input-group">
+              <label for="term">Mortgage Term</label>
+              <div class="input-wrapper">
+                <input class="no-arrows" type="number" id="term" placeholder="">
+                <span class="input-colors">years</span>
+              </div>
+              <div class="error-message" id="term-error"></div>
+            </div>
+            <div class="input-group">
+              <label for="rate">Interest Rate</label>
+              <div class="input-wrapper">
+                <input class="no-arrows" type="number" id="rate" placeholder="" step="0.01">
+                <span class="input-colors">%</span>
+              </div>
+              <div class="error-message" id="rate-error"></div> 
             </div>
           </div>
           <div class="input-group">
-            <label for="rate">Interest Rate</label>
-            <div class="input-wrapper">
-              <input class="no-arrows" type="number" id="rate" placeholder="" step="0.01">
-              <span class="input-colors">%</span>
+            <label>Mortgage Type</label>
+            <div class="radio-group">
+              <div class="radio-wrapper">
+                <label><input class="custom-radio" type="radio" name="type" value="repayment"> Repayment</label>
+              </div>
+              <div class="radio-wrapper">
+                <label><input class="custom-radio" type="radio" name="type" value="interest-only"> Interest Only</label>
+              </div>
+              <div class="error-message" id="type-error"></div> 
             </div>
           </div>
+          <button id="calculate"> <img src="assets/images/icon-calculator.svg" alt="">  Calculate Repayments</button>
         </div>
-        <div class="input-group">
-          <label>Mortgage Type</label>
-          <div class="radio-group">
-            <div class="radio-wrapper">
-              <label><input class="custom-radio" type="radio" name="type" value="repayment"> Repayment</label>
-            </div>
-            <div class="radio-wrapper">
-              <label><input class="custom-radio" type="radio" name="type" value="interest-only"> Interest Only</label>
-            </div>
-          </div>
-        </div>
-        <button id="calculate"> <img src="assets/images/icon-calculator.svg" alt="">  Calculate Repayments</button>
-      </div>
 
       <!-- Results Section -->
       <div class="results">
