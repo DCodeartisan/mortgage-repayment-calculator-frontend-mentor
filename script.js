@@ -14,6 +14,7 @@ document.getElementById('calculate').addEventListener('click', function () {
       document.getElementById('amount-error').textContent = 'This field is required';
       document.getElementById('amount-error').style.display = 'block';
       document.getElementById('amount').closest('.input-wrapper').classList.add('error-border');
+      document.querySelector('.input-color').classList.add('error'); // Add error class for amount
       hasError = true;
     }
   
@@ -21,6 +22,7 @@ document.getElementById('calculate').addEventListener('click', function () {
       document.getElementById('term-error').textContent = 'This field is required';
       document.getElementById('term-error').style.display = 'block';
       document.getElementById('term').closest('.input-wrapper').classList.add('error-border');
+      document.querySelector('.input-colors').classList.add('error'); // Add error class for term
       hasError = true;
     }
   
@@ -28,6 +30,7 @@ document.getElementById('calculate').addEventListener('click', function () {
       document.getElementById('rate-error').textContent = 'This field is required';
       document.getElementById('rate-error').style.display = 'block';
       document.getElementById('rate').closest('.input-wrapper').classList.add('error-border');
+      document.querySelector('.input-coloring').classList.add('error'); // Add error class for rate
       hasError = true;
     }
   
@@ -98,5 +101,10 @@ document.getElementById('calculate').addEventListener('click', function () {
     document.getElementById('term-error').style.display = 'none';
     document.getElementById('rate-error').style.display = 'none';
     document.getElementById('type-error').style.display = 'none'; // Clear the type error message
+  
+    // Remove the error background color
+    document.querySelector('.input-color').classList.remove('error');
+    document.querySelector('.input-colors').classList.remove('error');
+    document.querySelector('.input-coloring').classList.remove('error');
   }
   
