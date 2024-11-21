@@ -299,9 +299,111 @@
     font-weight: bold;
   }
 
-@media screen and (max-width: 900px) {
-    body {
-      display: none;
-    }
 
-    
+/* Medium devices (tablets, small laptops) */
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+  .calculator {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .results {
+    border-bottom-left-radius: 12px; 
+    padding: 20px;
+  }
+  .input-wrapper {
+    gap: 100px;
+  }
+  .input-wrapper span {
+    font-size: 17px;
+    padding: 12px;
+  }
+  button {
+    width: 100%
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    background-color: #fff;
+  }
+  .calculator {
+    box-shadow: none;
+    border-radius: 0
+  }
+  .container {
+    width: 100%;
+  }
+  a {
+  padding-top: 500px !important;
+  }
+  .form {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .input-wrapper span {
+    font-size: 17px;
+    padding: 12px;
+  }
+  button {
+    width: 100%; 
+  }
+  .results {
+    padding: 15px;
+    text-align: center;
+    border-bottom-left-radius: 0;
+  }
+  .results h2 {
+    font-size: 18px;
+  }
+  .results h3 {
+    font-size: 30px;
+  }
+}
+
+/* Extra-small devices (very small phones) */
+@media (max-width: 600px) {
+  .form {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .input-wrapper span {
+    font-size: 17px;
+    padding: 12px;
+  }
+  button {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  .results h3 {
+    font-size: 24px;
+  }
+  .results h4 {
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
