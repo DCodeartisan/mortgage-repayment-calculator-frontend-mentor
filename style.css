@@ -352,7 +352,7 @@
     padding: 20px;
   }
   h1 {
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 20px;
   }
   .input-wrapper span {
@@ -384,8 +384,15 @@
     padding: 15px;
   }
   h1 {
-    font-size: 22px;
+    font-size: 25px;
     margin-bottom: 20px;
+  }
+  .clear-all {
+    float: left;
+    margin-top: -25px;
+  }
+  .mortgage-amount {
+    margin-top: 65px;
   }
   .input-row {
     display: flex;
