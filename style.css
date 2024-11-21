@@ -323,8 +323,14 @@
     font-size: 17px;
     padding: 12px;
   }
+  .clear-all {
+    padding-top: 18px;
+  }
   button {
     width: 100%
+  }
+  #results-description {
+    margin-bottom: 50px;
   }
 }
 
@@ -353,6 +359,9 @@
     font-size: 17px;
     padding: 12px;
   }
+  .clear-all {
+    padding-top: 22px;
+  }
   button {
     width: 100%; 
   }
@@ -370,7 +379,7 @@
 }
 
 /* Extra-small devices (very small phones) */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .form {
     padding: 15px;
   }
@@ -378,9 +387,12 @@
     font-size: 22px;
     margin-bottom: 20px;
   }
-  .input-wrapper span {
-    font-size: 17px;
-    padding: 12px;
+  .input-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .interest-rate {
+    margin-top: -18px;
   }
   button {
     padding: 8px 0;
