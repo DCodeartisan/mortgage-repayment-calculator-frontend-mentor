@@ -41,7 +41,7 @@
     float: right;
     text-decoration: underline;
     color: #777;
-    font-size: 14px;
+    font-size: 18px;
     cursor: pointer;
     margin-top: -62px;
   }
@@ -74,7 +74,6 @@
     background: transparent;
     width: 100%;
     font-size: 16px;
-    margin-left: 5px;
     padding-left: 10px;
     outline: none;
     cursor: pointer;
@@ -323,11 +322,22 @@
     font-size: 17px;
     padding: 12px;
   }
+  .input-wrapper input {
+    padding-left: 10px;
+    padding-right: 0;
+    margin-left: 0px !important; 
+  }
   .clear-all {
     padding-top: 18px;
   }
+  .input-color, .input-colors, .input-coloring {
+    padding: 8px 16px !important;
+  }
+  .input-color {
+    margin-right: -100px;
+  }
   button {
-    width: 100%
+    width: 100%;
   }
   #results-description {
     margin-bottom: 50px;
@@ -343,7 +353,7 @@
   }
   .calculator {
     box-shadow: none;
-    border-radius: 0
+    border-radius: 0;
   }
   .container {
     width: 100%;
