@@ -104,6 +104,7 @@
 
   .input-color.error,
   .input-colors.error, .input-coloring.error {
+    color: #fff;
     background-color: #f00 !important;
   }
 
@@ -298,91 +299,9 @@
     font-weight: bold;
   }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     body {
-      background-color: #fff;
+      display: none;
     }
 
-    .container {
-      width: 100%;
-      box-shadow: none;
-    }
-  
-    .calculator {
-      display: flex;
-      flex-direction: column;
-      grid-template-columns: 1fr;
-      box-shadow: none;
-      border-radius: 0;
-    }
-  
-    .form, .results {
-      width: 100%;
-    }
-
-    .results {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-      margin-top: 20px;
-    }
-  
-    h1 {
-      font-size: 18px;
-    }
-  
-    button {
-      width: 100%;
-      font-size: 14px;
-  
-    .radio-group label {
-      font-size: 12px;
-    }
-  
-    .results h2, .results h3, .results h4 {
-      font-size: 16px;
-      border-radius: 0;
-    }
-  
-    .main {
-      padding: 15px 20px;
-      margin-bottom: 30px;
-    }
-  
-    #monthly-payment {
-      font-size: 24px;
-    }
-  
-    #calculated-results {
-      margin-top: 0;
-    }
-  }
-  
-  /* For very small screens */
-  @media screen and (max-width: 480px) {
-    body {
-      margin: 0;
-      font-size: 14px;
-    }
-  
-    h1 {
-      font-size: 16px;
-    }
-  
-    .input-wrapper {
-      flex-direction: column;
-    }
-  
-    .input-wrapper input {
-      margin-left: 0;
-      padding-left: 5px;
-    }
-  
-    .radio-group label {
-      font-size: 10px;
-    }
-  
-    .results h3 {
-      font-size: 20px;
-    }
-  }
-  
+    
